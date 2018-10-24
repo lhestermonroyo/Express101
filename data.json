@@ -2,15 +2,18 @@
 	"notes": [
 		{
 			"title": "Note A",
-			"content": "Nani?"
+			"content": "Nani?",
+			"author": "Eren Jaeger"
 		},
 		{
 			"title": "Baka",
-			"content": "Ohayo!"
+			"content": "Ohayo!",
+			"author": "Jean Kirchstein"
 		},
 		{
 			"title": "Note B",
-			"content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel itaque dolores perferendis deleniti amet provident repellat laboriosam, enim pariatur consequatur."
+			"content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel itaque dolores perferendis deleniti amet provident repellat laboriosam, enim pariatur consequatur.",
+			"author": "Mikasa Ackerman"
 		}
 	]
 }

@@ -16,7 +16,8 @@ router.post("/", (req, res) => {
   let notes = store.get("notes");
   notes.push({
     title: req.body.title,
-    content: req.body.content
+    content: req.body.content,
+    author: req.body.author
   });
   console.log(notes);
   store.set("notes", notes);

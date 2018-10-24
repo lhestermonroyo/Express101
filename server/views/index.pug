@@ -27,11 +27,16 @@ html(lang="en")
           tr
             th Title
             th Content
+            th Author
             th Option
           each note in notes
             tr
               td= note.title
               td= note.content  
+              td= note.author  
               td
+                .btn-group
+                  a.btn.btn-success(href="#") Edit
+                  a.btn.btn-danger(href="#") Delete
     script(src="/cardo.js")
     
