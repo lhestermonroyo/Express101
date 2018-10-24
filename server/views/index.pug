@@ -14,16 +14,16 @@ html(lang="en")
       form#add-note-form(action="/", method="post")
         .form-group
           label(for="title") Title
-          input.form-control#title(type="text" name="title")
+          input.form-control#title(type="text" name="title" v-model="title")
         .form-group
           label(for="content") Content
-          textarea.form-control#content(rows="3" name="content")
+          textarea.form-control#content(rows="3" name="content" v-model="content")
         .form-group
-          label(for="content") Author
-          input.form-control#author(type="text" name="author")
+          label(for="author") Author
+          input.form-control#author(type="text" name="author" v-model="author")
         .form-group
-          button(type="submit").btn.btn-success.mr-2 Add Note
-          button#clear-btn(type="button").btn.btn-default Clear
+          button(type="button" v-on:click="addNote").btn.btn-success.mr-2 Add Note
+          button#clear-btn(type="button" v-on:click="clear").btn.btn-default Clear
 
       section
         table#vue-table.table.table-hover.mt-5
@@ -40,8 +40,8 @@ html(lang="en")
             td {{ note.author }}
             td
               .btn-group
-                a.btn.btn-success(href="#") Edit
-                a.btn.btn-danger(href="#") Delete
+                button.btn.btn-success(type="button") Edit
+                button.btn.btn-danger(type="button" v-on:click="deleteNote(note)") Delete
 
     script(src="https://unpkg.com/axios/dist/axios.min.js")
     script(src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js")
