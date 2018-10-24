@@ -1,19 +1,46 @@
 {
-	"notes": [
-		{
-			"title": "Note A",
-			"content": "Nani?",
-			"author": "Eren Jaeger"
-		},
-		{
-			"title": "Baka",
-			"content": "Ohayo!",
-			"author": "Jean Kirchstein"
-		},
-		{
-			"title": "Note B",
-			"content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel itaque dolores perferendis deleniti amet provident repellat laboriosam, enim pariatur consequatur.",
-			"author": "Mikasa Ackerman"
-		}
-	]
+  "notes": [
+    {
+      "id": 1,
+      "title": "Sample",
+      "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur alias itaque ducimus repudiandae tempore eaque, in impedit nam harum nihil explicabo omnis beatae suscipit unde blanditiis ullam dolor eum deleniti.",
+      "author": "John Doe"
+    },
+    {
+      "id": 2,
+      "title": "Test Post",
+      "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur alias itaque ducimus repudiandae tempore eaque, in impedit nam harum nihil explicabo omnis beatae suscipit unde blanditiis ullam dolor eum deleniti.",
+      "author": "Brent Tudas"
+    },
+    {
+      "id": 3,
+      "title": "Agi si Beau",
+      "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora totam architecto delectus ab quaerat, est nostrum ut commodi consectetur enim id, animi velit laudantium maxime! Nihil voluptatum repudiandae inventore ex.",
+      "author": "Brent Tudas"
+    },
+    {
+      "id": 4,
+      "title": "Sample",
+      "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora totam architecto delectus ab quaerat, est nostrum ut commodi consectetur enim id, animi velit laudantium maxime! Nihil voluptatum repudiandae inventore ex.",
+      "author": "Tony Stark"
+    },
+    {
+      "id": 5,
+      "title": "Another Dummy Text",
+      "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora totam architecto delectus ab quaerat, est nostrum ut commodi consectetur enim id, animi velit laudantium maxime! Nihil voluptatum repudiandae inventore ex.",
+      "author": "Try boy"
+    },
+    {
+      "id": 6,
+      "title": "Another Dummy Text",
+      "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora totam architecto delectus ab quaerat, est nostrum ut commodi consectetur enim id, animi velit laudantium maxime! Nihil voluptatum repudiandae inventore ex.",
+      "author": "Try boy"
+    },
+    {
+      "id": 7,
+      "title": "How Long",
+      "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora totam architecto delectus ab quaerat, est nostrum ut commodi consectetur enim id, animi velit laudantium maxime! Nihil voluptatum repudiandae inventore ex.",
+      "author": "John Doe"
+    }
+  ]
 }

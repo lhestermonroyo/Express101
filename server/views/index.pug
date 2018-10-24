@@ -6,37 +6,44 @@ html(lang="en")
     title= title
 
     link(rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous")
+      href="https://bootswatch.com/4/darkly/bootstrap.min.css")
 
   body
     main(role="main" class="container")
       h1#pageTitle.mt-4 Welcome to MyNotes - The Note Taking App
-      form(action="/", method="post")
+      form#add-note-form(action="/", method="post")
         .form-group
           label(for="title") Title
-          input.form-control(type="text" name="title")
+          input.form-control#title(type="text" name="title")
         .form-group
           label(for="content") Content
-          textarea.form-control(rows="3" name="content")
+          textarea.form-control#content(rows="3" name="content")
+        .form-group
+          label(for="content") Author
+          input.form-control#author(type="text" name="author")
         .form-group
           button(type="submit").btn.btn-success.mr-2 Add Note
           button#clear-btn(type="button").btn.btn-default Clear
 
-      section.mt-3
-        table.table.table-hover
+      section
+        table#vue-table.table.table-hover.mt-5
           tr
+            th ID
             th Title
             th Content
             th Author
             th Option
-          each note in notes
-            tr
-              td= note.title
-              td= note.content  
-              td= note.author  
-              td
-                .btn-group
-                  a.btn.btn-success(href="#") Edit
-                  a.btn.btn-danger(href="#") Delete
-    script(src="/cardo.js")
-    
+          tr(v-for="note in notes")
+            td {{ note.id }}
+            td {{ note.title }}
+            td {{ note.content }}  
+            td {{ note.author }}
+            td
+              .btn-group
+                a.btn.btn-success(href="#") Edit
+                a.btn.btn-danger(href="#") Delete
+
+    script(src="https://unpkg.com/axios/dist/axios.min.js")
+    script(src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js")
+    script(src="/vue.js")
+    //- script(src="/cardo.js")

@@ -10,9 +10,7 @@
     "ecmaVersion": 8,
     "sourceType": "module"
   },
-  "extends": [
-    "eslint:recommended"
-  ],
+  "extends": ["eslint:recommended"],
   "rules": {
     "no-bitwise": "error",
     "camelcase": "error",
@@ -21,7 +19,9 @@
     "guard-for-in": "error",
     "no-extend-native": "error",
     "wrap-iife": ["error", "inside"],
-    "indent": ["error", 2,
+    "indent": [
+      "error",
+      2,
       {
         "SwitchCase": 1
       }
@@ -37,20 +37,28 @@
     "max-depth": ["error", 5],
     "max-statements": ["error", 80],
     "complexity": ["error", 9],
-    "max-len": ["error", { "code": 120, "ignoreComments": true, "ignoreRegExpLiterals": true }],
+    "max-len": [
+      "error",
+      { "code": 120, "ignoreComments": true, "ignoreRegExpLiterals": true }
+    ],
     "no-implicit-coercion": "error",
     "one-var": ["error", "never"],
     "space-before-function-paren": ["error", "never"],
     "no-trailing-spaces": "error",
     "space-in-parens": ["error", "never"],
     "semi-spacing": ["error", { "before": false, "after": true }],
-    "keyword-spacing": ["error", { "overrides": {
-      "if": { "after": false },
-      "for": { "after": false },
-      "while": { "after": false },
-      "switch": { "after": false },
-      "catch": { "after": false }
-    } }],
+    "keyword-spacing": [
+      "error",
+      {
+        "overrides": {
+          "if": { "after": false },
+          "for": { "after": false },
+          "while": { "after": false },
+          "switch": { "after": false },
+          "catch": { "after": false }
+        }
+      }
+    ],
     "key-spacing": ["error", { "beforeColon": false }],
     "array-bracket-spacing": ["error", "never"],
     "object-curly-spacing": ["error", "always"],
@@ -63,7 +71,7 @@
     "comma-style": ["error", "last"],
     "comma-spacing": ["error", { "before": false, "after": true }],
     "block-spacing": 2,
-    "consistent-this":  ["error", "self"],
+    "consistent-this": ["error", "self"],
     "no-console": "off",
     "no-extra-boolean-cast": "off",
     "no-constant-condition": ["error", { "checkLoops": false }]
@@ -76,6 +84,7 @@
     "before": false,
     "beforeEach": false,
     "after": false,
-    "afterEach": false
+    "afterEach": false,
+    "axios": false
   }
 }

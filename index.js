@@ -3,7 +3,6 @@
  * Entry file for The Province Man's Web App
  */
 const express = require("express");
-const morgan = require("morgan");
 const path = require("path");
 const bodyParser = require("body-parser");
 const indexRouter = require("./server/routers/indexRouter");
@@ -12,7 +11,6 @@ const aboutRouter = require("./server/routers/aboutRouter");
 const app = express();
 const port = 3300;
 
-app.use(morgan("dev"));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 

@@ -1,0 +1,40 @@
+{
+	"notes": [
+		{
+			"id": "1",
+			"title": "Note A",
+			"content": "Nani?",
+			"author": "Eren Jaeger"
+		},
+		{
+			"id": "2",
+			"title": "Baka",
+			"content": "Ohayo!",
+			"author": "Jean Kirchstein"
+		},
+		{
+			"id": "3",
+			"title": "Note B",
+			"content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel itaque dolores perferendis deleniti amet provident repellat laboriosam, enim pariatur consequatur.",
+			"author": "Mikasa Ackerman"
+		},
+		{
+			"id": "4",
+			"title": "Note C",
+			"content": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat nobis, eligendi assumenda dignissimos sit culpa perspiciatis numquam quasi vel ut aspernatur doloremque atque maiores non ab ullam molestiae excepturi et?",
+			"author": "John Doe"
+		},
+		{
+			"id": "5",
+			"title": "Learn ReactJS in One Week",
+			"content": " Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit iste, saepe laboriosam perferendis, blanditiis, qui molestias dolor praesentium vel a ducimus quas dolorum ipsam at tenetur quibusdam asperiores fuga. Tempora.",
+			"author": "Brad Traversy"
+		},
+		{
+			"id": "6",
+			"title": "Learn ReactJS in One Week",
+			"content": " Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit iste, saepe laboriosam perferendis, blanditiis, qui molestias dolor praesentium vel a ducimus quas dolorum ipsam at tenetur quibusdam asperiores fuga. Tempora.",
+			"author": "Brad Traversy"
+		}
+	]
+}

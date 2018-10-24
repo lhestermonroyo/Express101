@@ -5,6 +5,7 @@ const express = require("express");
 const router = express.Router(); //eslint-disable-line
 const SimpleJsonStore = require("simple-json-store");
 const store = new SimpleJsonStore("./data.json", { notes: [] });
+let cnt = 1;
 
 router.get("/", (req, res) => {
   let viewModel = req.viewModel;
@@ -15,6 +16,7 @@ router.get("/", (req, res) => {
 router.post("/", (req, res) => {
   let notes = store.get("notes");
   notes.push({
+    id: store.get("notes").length + 1,
     title: req.body.title,
     content: req.body.content,
     author: req.body.author
