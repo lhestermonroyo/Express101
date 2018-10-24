@@ -10,6 +10,17 @@ html(lang="en")
 
   body
     main(role="main" class="container")
-      h1#pageTitle Welcome to Card - The Note Taking App
-      
+      h1#pageTitle.mt-4 Welcome to Card - The Note Taking App
+      form(action="/", method="post")
+      .form-group
+        label(for="title") Title
+        input.form-control(type="text" name="title")
+      .form-group
+        label(for="content") Content
+        textarea.form-control(rows="3" name="content")
+      .form-group
+        button(type="submit").btn.btn-success.mr-2 Add Note
+        button#clear-btn(type="button").btn.btn-default Clear
     script(src="/cardo.js")
+
+    
