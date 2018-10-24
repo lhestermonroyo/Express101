@@ -10,6 +10,11 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.16.4",
-    "pug": "^2.0.3"
+    "morgan": "^1.9.1",
+    "pug": "^2.0.3",
+    "simple-json-store": "0.0.1"
+  },
+  "devDependencies": {
+    "eslint": "^5.7.0"
   }
 }

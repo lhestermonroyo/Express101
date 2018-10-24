@@ -10,17 +10,6 @@ html(lang="en")
 
   body
     main(role="main" class="container")
-      h1#h1Title CARDO!!!
-      p Ang Probinsyano - Season 3
-      .row
-        each actor in actors
-          .col
-            span= actor.name
-      div.row
-        each season in seasons
-          div(class="col" id="column")
-            h4= season
-            img(
-              style="width: 100%; padding: 5px;"
-              src="/cardo.jpg")
+      h1#pageTitle Welcome to Card - The Note Taking App
+      
     script(src="/cardo.js")
