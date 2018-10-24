@@ -18,7 +18,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 app.use((req, res, next) => {
   req.viewModel = {
-    title: "Lhester - Note Taking App"
+    title: "MyNotes - Note Taking App"
   };
   next();
 });

@@ -8,6 +8,7 @@ const store = new SimpleJsonStore("./data.json", { notes: [] });
 
 router.get("/", (req, res) => {
   let viewModel = req.viewModel;
+  viewModel.notes = store.get("notes");
   res.render("index.pug", viewModel);
 });
 
@@ -19,8 +20,7 @@ router.post("/", (req, res) => {
   });
   console.log(notes);
   store.set("notes", notes);
-  // res.redirect("/");
-  res.json(notes);
+  res.redirect("/");
 });
 
 module.exports = router;
